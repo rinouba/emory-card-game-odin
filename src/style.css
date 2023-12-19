@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+  position: relative;
+}
+
+.card .front{
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+
+.flibed .front{
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.card .back{
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flibed .back{
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
